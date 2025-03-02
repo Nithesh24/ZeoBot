@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-blue: #0074e0;   /* Vibrant Blue */
+    --secondary-blue: #005bb5; /* Deeper Blue */
+    --accent-purple: #6f42c1;  /* Rich Purple */
+    --light-purple: #a488d9;   /* Soft Lavender */
+    --background-light: #f4f5f7; /* Light Grey */
+    --text-dark: #1a1a1a;      /* Almost Black */
+    --text-light: #ffffff;     /* Pure White */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 1rem; /* Add subtle padding to the left */
+}
+
+.body div:nth-child(odd) {
+    background-color: var(--accent-purple); /* Alternate background color */
+    color: var(--text-light);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.body div:nth-child(even) {
+    background-color: var(--primary-blue); /* Alternate background color */
+    color: var(--text-light);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(to right, #12d8c4, #00a4e4, #0057d9, #9c27b0);
+    border-image-slice: 1;
+}
+
+.body {
+    height: 80vh;
+}
+
+.footer {
+    height: 10vh;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+input {
+    width: 85vw;
+    margin-right: 1vw;
+    margin-left: .5em;
+    padding: 12px 24px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 25px;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: var(--accent-purple);
+}
+
+.button {
+    background-color: #0b66ff; /* Blue background */
+    color: #ffffff; /* White text */
+    font-weight: normal;
+    font-size: 12px;
+    width: 10vw;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 25px; /* Fully rounded edges */
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0057d9; /* Slightly darker blue on hover */
+}
